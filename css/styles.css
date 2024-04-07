@@ -52,6 +52,8 @@ img {
 
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -138,7 +140,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-address-link:hover,
 .header-address-link:focus {
@@ -149,6 +151,7 @@ img {
   background-color: #2e2f42;
   padding-top: 188px;
   padding-bottom: 188px;
+  max-width: 1440px;
   margin: 0 auto;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -208,13 +211,20 @@ img {
   display: flex;
   gap: 24px;
 }
-.features-svg {
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
-  width: 264px;
+
+.features-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 112px;
   background-color: #f4f4fd;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
   margin-bottom: 8px;
+}
+
+.features-svg {
+  width: 264px;
 }
 
 .features-item {
@@ -298,6 +308,7 @@ img {
   display: flex;
   gap: 24px;
   padding: 8px 16px 0 16px;
+  justify-content: center;
 }
 
 .icon-item {
@@ -317,7 +328,7 @@ img {
 }
 
 .icon-icon {
-  fill: #ffffff;
+  fill: #f4f4fd;
 }
 
 .icon-link:hover,
@@ -346,6 +357,7 @@ img {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: #fff;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item:hover .portfolio-text-marketing {
@@ -411,6 +423,10 @@ img {
 .footer-container {
   display: flex;
   gap: 120px;
+}
+
+.footer-wrap {
+  padding-left: 156px;
 }
 
 .footer-logo {
